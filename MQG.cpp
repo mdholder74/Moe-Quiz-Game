@@ -10,12 +10,12 @@ int main()
                             "3. Who is Moe's favorite Artist?: ",
                             "4. How many siblings does Moe have?: "};
                             
-    string choices[][4] = {{"A. Black", "B. Purple", "C. White", "D. Gray"},
+    string choices[][4] = {{"A. Purple", "B. Black", "C. White", "D. Gray"},
                             {"A. Lebron James", "B. Jalen Hurts", "C. Devin Haney", "D. Anthony Davis"},
                             {"A. Kevin Gate", "B. Beyonce", "C. J Cole", "D. DMX"},
                             {"A. 1", "B. 2","C. 3","D. 4"}};
                             
-    char answersKey[] = {'A', 'A', 'A', 'D'};
+    char answersKey[] = {'B', 'A', 'A', 'D'};
     
     int size = sizeof(questions)/sizeof(questions[0]);
     char guess;
@@ -34,12 +34,12 @@ int main()
         guess = toupper(guess);
         
         if(guess == answersKey[i]){
-            cout << "CORRECT HOMIE\n";
+            cout << "CORRECT MY FRIEND\n";
             score++;
         }
         else{
             cout << "WRONG SUCKA!!!\n";
-            cout << "Answer: " << answerskey[i] << '\n';
+            cout << "Answer: " << answersKey[i] << '\n';
         }
         
         
